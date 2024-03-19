@@ -44,7 +44,7 @@ class Semester {
     }
 
     gpa(): number {
-        let totalPoints = 0;
+        let totalPoints: number = 0;
         this.courses.forEach((course) => {
             totalPoints += gpaValue(course.calculateGrade()) * course.credits;
         });
