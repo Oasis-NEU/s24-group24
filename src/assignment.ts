@@ -9,20 +9,22 @@ class Assignment {
         this.name = name;
         this.category = category;
         this.totalPoints = totalPoints;
-        if (score === undefined) {
-            this.rawPoints = 0;
-            this.isGraded = false;
-        } else {
-            this.rawPoints = score;
-            this.isGraded = true;
-        }
+        this.rawPoints = score === undefined ? 0 : score;
+        this.isGraded = score !== undefined;
     }
 
+    /**
+     * grades this assignment (sets the value of rawPoints to the given value)
+     * @param points the raw number of points the student received
+     */
     grade(points: number) {
         this.rawPoints = points;
         this.isGraded = true;
     }
 
+    /**
+     * @returns the score the student received on this assignment
+     */
     score(): number {
         return this.rawPoints / this.totalPoints;
     }
