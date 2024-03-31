@@ -51,6 +51,9 @@ class Course {
         return grade;
     }
 
+    /**
+     * @returns the current letter grade the student has in this course
+     */
     letterGrade(): string {
         let grade: number = this.calculateGrade();
         if (grade >= 93) {

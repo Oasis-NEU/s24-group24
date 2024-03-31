@@ -1,3 +1,5 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import { supabase } from './supabase';
 import { useState, useEffect } from 'react';
 import { Auth } from '@supabase/auth-ui-react';
@@ -42,3 +44,4 @@ function App() {
 }
 
 export default App;
+// ReactDOM.render(<App />, document.getElementById('root'));
