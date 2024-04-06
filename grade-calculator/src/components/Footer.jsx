@@ -7,23 +7,11 @@ function Footer() {
   return (
     <div className='footer-container'>
       <section className='footer-subscription'>
-        <p className='footer-subscription=heading'>
-          Join News Letter
-        </p>
         <p className='footer-subscription-text'>
-          Unsub whenever
+          ShowMyGrades.com
+          <br />
+          Want to learn more? Click some of the links below!
         </p>
-        <div className='input-areas'>
-          <input 
-            type='email' 
-            name='email' 
-            placeholder='Your Email' 
-            className='footer-input'
-          />
-          <Button buttonStyle="btn--outline">
-            Subscribe 
-          </Button>
-        </div>
       </section>
       <div class='footer-links'>
         <div className='footer-link-wrapper'>

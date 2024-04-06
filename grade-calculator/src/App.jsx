@@ -8,8 +8,6 @@ import './App.css';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/pages/Home';
-import services from './components/pages/Services';
-import products from './components/pages/Products';
 import signup from './components/pages/Signup';
 
 function App() {
@@ -62,8 +60,6 @@ function App() {
             <Navbar />
             <Routes>
                 <Route path='/' Component={Home} />
-                <Route path='/services' Component={services} />
-                <Route path='/products' Component={products} />
                 <Route path='/sign-up' Component={signup} />
             </Routes>
             </Router> 
