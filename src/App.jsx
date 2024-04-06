@@ -4,9 +4,17 @@ import { supabase } from './supabase';
 import { useState, useEffect } from 'react';
 import { Auth } from '@supabase/auth-ui-react';
 import { ThemeSupa } from '@supabase/auth-ui-shared';
+import './App.css';
+import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/pages/Home';
+import services from './components/pages/Services';
+import products from './components/pages/Products';
+import signup from './components/pages/Signup';
+
 
 function App() {
-    const [session, setSession] = useState<any>();
+    const [session, setSession] = useState(null);
 
     useEffect(() => {
         // What is the initial user session? Set that session to the "session" state variable
@@ -36,8 +44,15 @@ function App() {
     } else {
         return (
             <div>
-                <h1>Logged In</h1>
-                <button onClick={() => logOut()}>Log Out</button>
+                <Router>
+                <Navbar />
+                <Routes>
+                    <Route path='/' Component={Home} />
+                    <Route path='/services' Component={services} />
+                    <Route path='/products' Component={products} />
+                    <Route path='/sign-up' Component={signup} />
+                </Routes>
+                </Router> 
             </div>
         );
     }
