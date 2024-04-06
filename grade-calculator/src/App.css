@@ -9,6 +9,7 @@
 .services,
 .products,
 .sign-up {
+  background-image: url('./components/images/netherPortal.jpeg');
   display: flex;
   height: 90vh;
   align-items: center;
@@ -17,7 +18,7 @@
 }
 
 .services {
-  background-image: url('/public/images/img-2.jpg');
+  background-image: url('./components/images/netherPortal.jpeg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,7 +27,7 @@
 }
 
 .products {
-  background-image: url('/public/images/img-1.jpg');
+  background-image: url('./components/images/netherPortal.jpeg');
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -35,7 +36,7 @@
 }
 
 .sign-up {
-  background-image: url('/public/images/img-8.jpg');
+  background-image: url('./components/images/netherPortal.jpeg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
