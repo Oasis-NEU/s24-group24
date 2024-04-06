@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "grade-calculator/src/App.js"], "grade-calculator/src/main.jsx",
   "references": [{ "path": "./tsconfig.node.json" }]
 }
