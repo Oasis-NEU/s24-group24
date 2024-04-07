@@ -7,14 +7,14 @@ function HeroSection() {
   return (
     <div className='hero-container'>
       <h1>Track Your Grades</h1>
-      <p>Save your grades from your semsters and organize your GPA</p>
+      <p>Save your grades from your semesters and organize your GPA</p>
       <div className='hero-btns'>
         <Button 
           className='btns' 
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-          GET STARTED
+          Get Started
         </Button>
       </div>
     </div>

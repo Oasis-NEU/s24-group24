@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Assignment from './Assignment';
 
 function CardItem(props) {
-  // props is given object taht has all data need for a crad's creation
+  // props is given object taht has all data need for a card's creation
 
   // <Link className='cards__item__link' to ={props.path}> 
   // passes in given data to be formatted by the CardItem function
@@ -12,11 +13,7 @@ function CardItem(props) {
       <li className='cards__item'>
         <Link className='cards__item__link' to={props.path}> 
           <figure className='cards__item__pic-wrap' data-category={props.label}>
-            <img 
-              className='cards__item__img'
-              alt='Travel Image' 
-              src={props.src} 
-            />
+            {/* <img src='./images/netherPortal.jpeg'></img> */}
           </figure>
           <div className='cards__item__info'>
             <h5 className='cards__item__text'>

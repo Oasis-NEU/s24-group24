@@ -8,99 +8,60 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-text'>
-          ShowMyGrades.com
+          ShowMyGrades.com - Calculating Grades Could Not Be Any More Efficient
           <br />
-          Want to learn more? Click some of the links below!
+          Thank you to our mentor Willie Brooks for the excellent 
+          advice to get this
+          project rolling. 
+          <br />
+          Learn more about the creators behind the website!
         </p>
+
       </section>
-      <div class='footer-links'>
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
-            <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
-            <Link to='/'>Terms of Service</Link>
-          </div>
-          <div class='footer-link-items'>
-            <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link>
-          </div>
+
+    
+        <div className="about-spread">
+         <div className="about-text1">
+          <img className="mateo-image"></img>
+           <p>Mateo Biggs: Hi! My name is Mateo, and I am a 
+            first-year Northeastern University undergraduate CS student.
+            I am from the Columbus, Ohio, area and love to spend my free 
+            time playing soccer, reviewing movies, reading, and programming 
+            video games.  I am hoping to become a patent agent or software 
+            engineer after graduating.
+            Check out my LinkedIn  <a href="https://www.linkedin.com/in/mateo-biggs-a192461b1/">here</a>.
+            <br />
+            <br />
+            <img className="mihalis-image"></img>
+            Mihalis Koutouvos: Hello! My name is Mihalis, a first-year student 
+            studying computer science at Northeastern University. I am from Ashland, 
+            Massachusetts, and some of my personal interests include working out, cooking, 
+            running/swimming, coding personal projects, and exploring new areas.
+            I am aiming to become an AI or software engineer. 
+            Check out my LinkedIn  <a href="www.linkedin.com/in/mihalis-koutouvos">here</a>.
+            </p>
+            </div>
+
+            <div className="about-text2">
+            <img className="jeremy-image"></img>
+            <p>Jeremy Marino: Hi! My name is Jeremy, and I am a first-year student 
+            at Northeastern University majoring in computer science. I am from Lakeville, Massachusetts, 
+            and I enjoy spending time with friends, playing basketball and videogames, 
+            and exploring. I am currently considering becoming a web developer. 
+            Check out my LinkedIn <a href="https://www.linkedin.com/in/jeremy-marino-941563244/">here</a>. 
+            <br />
+            <br />
+            <img className="smyan-image"></img>
+            Smyan Sengupta: Hey! My name is Smyan, a first-year student 
+            studying computer science at Northeastern University. I am from Niskayuna,
+            New York, and I like exploring the city, biking, speedcubing, and trains.
+            I hope to go into some part of the software engineering field, and I am 
+            especially interested in becoming an AI engineer. 
+            Check out my LinkedIn <a href="https://www.linkedin.com/in/smyan-sengupta/">here</a>.
+            </p>
+         </div>
         </div>
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
-            <h2>Videos</h2>
-            <Link to='/'>Submit Video</Link>
-            <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link>
-          </div>
-          <div class='footer-link-items'>
-            <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
-          </div>
-        </div>
-      </div>
-      <section class='social-media'>
-        <div class='social-media-wrap'>
-          <div class='footer-logo'>
-            <Link to='/' className='social-logo'>
-              TRVL
-              <i class='fab fa-typo3' />
-            </Link>
-          </div>
-          <small class='website-rights'>TRVL © 2020</small>
-          <div class='social-icons'>
-            <Link
-              class='social-icon-link facebook'
-              to='/'
-              target='_blank'
-              aria-label='Facebook'
-            >
-              <i class='fab fa-facebook-f' />
-            </Link>
-            <Link
-              class='social-icon-link instagram'
-              to='/'
-              target='_blank'
-              aria-label='Instagram'
-            >
-              <i class='fab fa-instagram' />
-            </Link>
-            <Link
-              class='social-icon-link youtube'
-              to='/'
-              target='_blank'
-              aria-label='Youtube'
-            >
-              <i class='fab fa-youtube' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='Twitter'
-            >
-              <i class='fab fa-twitter' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='LinkedIn'
-            >
-              <i class='fab fa-linkedin' />
-            </Link>
-          </div>
-        </div>
-      </section>
+     
     </div>
   )
 }

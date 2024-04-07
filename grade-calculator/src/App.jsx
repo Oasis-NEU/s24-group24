@@ -2,16 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { supabase } from './supabase';
 import { useState, useEffect } from 'react';
-import { Auth } from '@supabase/auth-ui-react';
+import { Auth, SignIn } from '@supabase/auth-ui-react';
 import { ThemeSupa } from '@supabase/auth-ui-shared';
 import './App.css';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/pages/Home';
-import signup from './components/pages/Signup';
+import signup from './components/pages/SignUp';
 
 function App() {
-    // const [session, setSession] = useState(0);
+    const [session, setSession] = useState(0);
 
     // useEffect(() => {
     //     // What is the initial user session? Set that session to the "session" state variable
@@ -45,8 +45,6 @@ function App() {
     //             <Navbar />
     //             <Routes>
     //                 <Route path='/' Component={Home} />
-    //                 <Route path='/services' Component={services} />
-    //                 <Route path='/products' Component={products} />
     //                 <Route path='/sign-up' Component={signup} />
     //             </Routes>
     //             </Router> 
@@ -55,6 +53,7 @@ function App() {
     // }
 
     return (
+        // <SignIn />
         <div>
             <Router>
             <Navbar />

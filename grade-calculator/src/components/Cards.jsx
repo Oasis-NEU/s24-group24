@@ -1,43 +1,44 @@
 import React from 'react';
 import CardItem from './CardItem';
 import './Cards.css';
+import Assignment from './Assignment';
+import Course from './Course';
+import Semester from './Semester';
+import { useState } from 'react';
 
 // idea is if user isn't signed in we have one big Add class card
 // otherwise, we display all cards with their input data
 
 function Cards() {
+  const [semesters, setSemesters] = useState([]);
+
+  const addSemester = (semester) => {
+    let s = semesters;
+    s.push(semester);
+    setSemesters(s);
+  }
+
+  const removeSemester = (index) => {
+    setSemesters(semesters.filter((_, i) => i !== index));
+  }
+
   return (
     <div className='cards'>
-      <h1>Add Your Class!</h1>
+      <h2>Add Your Class!</h2>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
-            <CardItem
-              src='images/img-9.jpg'
-              text="Sign-In Here!"
-              label='Semester'
-              path='/sign-up' 
-            />
-          </ul>
-          <ul className='cards__items'>
-            <CardItem
-              src='images/img-9.jpg'
-              text="Fall 2023"
-              label='Semester'
-              path='/services' 
-            />
-            <CardItem
-              src='images/img-9.jpg'
-              text="Fall 2023"
-              label='Semester'
-              path='/services' 
-            />
-            <CardItem
-              src='images/img-9.jpg'
-              text="Fall 2023"
-              label='Semester'
-              path='/services' 
-            />
+            {/* {semesters.map((semester, index) => (
+              <div>
+                <br /> */}
+                <CardItem
+                  text={<Course />}
+                  label="Course"
+                />
+              {/* </div>
+            ))}
+            <br />
+            <button onClick={addSemester}>Add Semester</button> */}
           </ul>
         </div>
       </div>
@@ -45,4 +46,4 @@ function Cards() {
   )
 }
 
-export default Cards
+export default Cards;

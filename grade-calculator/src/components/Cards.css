@@ -5,11 +5,19 @@
 
 h1 {
   text-align: center;
+  color: white;
+}
+
+h2 {
+  font-size: 4rem;
+  text-align: center;
+  color: black;
 }
 
 .cards__container {
   display: flex;
   flex-direction: column;
+  justify-content: column;
   align-items: center;
   max-width: 1120px;
   width: 90%;
